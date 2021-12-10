@@ -145,7 +145,20 @@ h1, .the-brothers__title {
   padding: 0 50px 25px 50px;
 }
 
-.blog-post {
+.latest-news__title {
+  color: black;
+  font-family: "Signika", sans serif;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.news {
   width: 100%;
   max-width: 98rem;
   display: flex;
@@ -154,7 +167,7 @@ h1, .the-brothers__title {
   margin-bottom: 50px;
 }
 
-.blog-post__img {
+.news__img {
   min-width: 35rem;
   max-width: 35rem;
   height: 30rem;
@@ -162,7 +175,7 @@ h1, .the-brothers__title {
   position: relative;
 }
 
-.blog-post__img img {
+.news__img img {
   width: 100%;
   height: 100%;
   border-radius: 16px;
@@ -170,24 +183,24 @@ h1, .the-brothers__title {
   display: block;
 }
 
-.blog-post__title {
+.news__title {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffd900;
 }
 
-.blog-post__info {
+.news__info {
   padding-right: 35px;
 }
 
-.blog-post__text {
+.news__text {
   font-size: 18px;
   color: white;
   text-align: justify;
 }
 
-.blog-post__cta {
+.news__cta {
   display: inline-block;
   padding: 8px;
   letter-spacing: 1px;
@@ -200,31 +213,18 @@ h1, .the-brothers__title {
   transition: transform 0.5s ease;
 }
 
-.blog-post__cta a {
+.news__cta a {
   text-decoration: none;
   color: white;
 }
 
-.blog-post__cta a:hover {
+.news__cta a:hover {
   text-decoration: none;
   color: white;
 }
 
-.blog-post__cta:hover {
+.news__cta:hover {
   transform: scale(1.1);
-}
-
-.latest-news__title {
-  color: black;
-  font-family: "Signika", sans serif;
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding-top: 50px;
-  margin-bottom: 50px;
 }
 
 /*******************  index: PROPAGANDA DEL TOUR  *******************/
@@ -401,6 +401,7 @@ h1, .the-brothers__title {
   text-align: center;
 }
 
+/* FIN DE USO DE MAPAS */
 .tour__contenedor {
   background-color: black;
 }
@@ -848,7 +849,7 @@ h1, .the-brothers__title {
     height: auto;
   }
 
-  .blog-post {
+  .news {
     margin: 0 auto 50px auto;
   }
 
@@ -917,16 +918,16 @@ h1, .the-brothers__title {
     height: auto;
   }
 
-  .blog-post {
+  .news {
     padding: 2rem;
     flex-direction: column;
   }
 
-  .blog-post__info {
+  .news__info {
     padding-right: 0;
   }
 
-  .blog-post__img {
+  .news__img {
     min-width: 100%;
     max-width: 100%;
     padding: 0;
@@ -993,16 +994,16 @@ h1, .the-brothers__title {
     height: auto;
   }
 
-  .blog-post {
+  .news {
     padding: 2rem;
     flex-direction: column;
   }
 
-  .blog-post__info {
+  .news__info {
     padding-right: 0;
   }
 
-  .blog-post__img {
+  .news__img {
     min-width: 100%;
     max-width: 100%;
     padding: 0;
@@ -1103,21 +1104,21 @@ h1, .the-brothers__title {
     grid-row: span 1;
   }
 
-  .blog-post {
+  .news {
     padding: 2rem;
     flex-direction: column;
   }
 
-  .blog-post__img {
+  .news__img {
     display: none;
   }
 
-  .blog-post__info {
+  .news__info {
     margin-top: -100px;
     padding-right: 0;
   }
 
-  .blog-post__text {
+  .news__text {
     text-align: center;
   }
 
