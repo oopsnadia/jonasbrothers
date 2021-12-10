@@ -1,0 +1,368 @@
+@media only screen and (min-width: 1281px) {
+  .carrusel {
+    height: auto;
+  }
+
+  .blog-post {
+    margin: 0 auto 50px auto;
+  }
+
+  .disc__contenedor,
+  .disc__contenedor2 {
+    height: auto;
+  }
+
+  .album__info,
+  .album__info2 {
+    h3 {
+      font-size: 45px;
+    }
+
+    p {
+      font-size: 35px;
+    }
+  }
+
+  .album__info--icons a {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .contenedor__imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .carrusel {
+    height: auto;
+  }
+
+  .joejonas-imagen,
+  .nickjonas-imagen,
+  .kevinjonas-imagen {
+    height: 20%px;
+    width: 28%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .video__individual {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .video__individual--title {
+    padding: 10px;
+  }
+
+  .disc__contenedor,
+  .disc__contenedor2 {
+    height: auto;
+  }
+
+  .album__info,
+  .album__info2 {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .carrusel {
+    width: 100%;
+    height: auto;
+  }
+  .blog-post {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .blog-post__info {
+    padding-right: 0;
+  }
+
+  .blog-post__img {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .buy-tickets .btn {
+    width: 60%;
+  }
+
+  .contenedor__imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .joejonas-imagen,
+  .nickjonas-imagen,
+  .kevinjonas-imagen {
+    height: 20%px;
+    width: 28%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .video__individual {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .video__individual--title {
+    padding: 20px;
+  }
+
+  .disc__contenedor,
+  .disc__contenedor2 {
+    height: auto;
+  }
+
+  .album__info,
+  .album__info2 {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 768px) {
+  .jonas-brothers__principal {
+    height: 70vh;
+  }
+
+  .jonas-brothers__principal h1 {
+    font-size: 30px;
+    padding-top: 80px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .carrusel {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-post {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .blog-post__info {
+    padding-right: 0;
+  }
+
+  .blog-post__img {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .buy-tickets .btn {
+    width: 80%;
+  }
+
+  .contenedor__imagenes {
+    display: none;
+  }
+
+  .gallery__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery__container--individual:nth-child(8) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .video__individual {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .video__individual2 {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .video__individual--title {
+    padding: 10px;
+  }
+
+  .disc__contenedor,
+  .disc__contenedor2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .album__info,
+  .album__info2 {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .footer {
+    position: relative;
+  }
+  .footer__newsletter,
+  .footer__redes-sociales {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #table {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 280px) and (max-width: 560px) {
+  .jonas-brothers__principal {
+    height: 50vh;
+  }
+
+  .jonas-brothers__principal h1 {
+    font-size: 30px;
+    padding-top: 80px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .carrusel {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery__container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__container--individual:nth-child(n + 1) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .blog-post {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .blog-post__img {
+    display: none;
+  }
+
+  .blog-post__info {
+    margin-top: -100px;
+    padding-right: 0;
+  }
+
+  .blog-post__text {
+    text-align: center;
+  }
+
+  .buy-tickets .btn {
+    width: 100%;
+  }
+
+  .contenedor__imagenes {
+    display: none;
+  }
+
+  .tour__dates-texto-animado--title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  $headings: (
+    h2: 30px,
+    h3: 20px,
+    h4: 15px,
+  );
+
+  @each $h, $size in $headings {
+    .btn--#{$h} {
+      font-size: $size;
+      font-family: $font;
+      color: $color4;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  #table {
+    width: 100%;
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .table .btn {
+    font-weight: none;
+    font-size: 10px;
+  }
+
+  .video__individual {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  .video__individual2 {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .video__individual--title {
+    padding: 10px;
+  }
+
+  .disc__contenedor,
+  .disc__contenedor2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .album__info,
+  .album__info2 {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .footer {
+    position: relative;
+  }
+  .footer__newsletter,
+  .footer__redes-sociales {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

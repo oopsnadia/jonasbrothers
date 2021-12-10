@@ -1,0 +1,90 @@
+/*******************  VIDEOS *******************/
+
+#videos {
+  font-family: $font;
+}
+
+.videos__title {
+  @extend .discography__title;
+  background-color: $color1;
+}
+
+.videos__contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.videos__contenedor2 {
+  background-color: $color7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.video__contenedor--caja {
+  background-color: $color4;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.video__contenedor--caja2 {
+  background-color: $color7;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video__individual {
+  width: 45%;
+  height: auto;
+  margin: 30px;
+}
+
+.video__individual2 {
+  width: 29%;
+  height: auto;
+  margin: 10px;
+}
+
+.video__individual--title {
+  text-align: center;
+  color: $color1;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.video__individual--title2 {
+  text-align: center;
+  color: $color5;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.video__individual--title3 {
+  color: $color5;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.videos__contenedor iframe {
+  width: 100%;
+  height: 350px;
+  justify-content: center;
+}
+
+.videos__contenedor2 iframe {
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+}

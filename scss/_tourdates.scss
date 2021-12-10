@@ -1,0 +1,119 @@
+/*******************  TOUR DATES  *******************/
+
+/* USO DE MAPAS */
+
+.tour-dates__texto-animado {
+  background-color: $color1;
+  padding: 10px;
+  background-image: url(img/tourdates.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+
+.tour-dates__texto-animado--contenedor {
+  margin-top: 35px;
+}
+
+.tour__dates-texto-animado--title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+$headings: (
+  h2: 40px,
+  h3: 35px,
+  h4: 30px,
+);
+
+@each $h, $size in $headings {
+  .btn--#{$h} {
+    font-size: $size;
+    font-family: $font;
+    color: $color4;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.tour__contenedor {
+  background-color: $color1;
+}
+
+.tour-dates {
+  @extend .discography;
+}
+
+.tour-dates__title {
+  color: $color4;
+
+  font-family: $font;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  padding-top: 30px;
+}
+
+.tour-dates__subtitle {
+  color: $color7;
+
+  font-family: $font;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#table {
+  width: 80%;
+  margin: 50px auto;
+  background-color: $color2;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.table__titulos {
+  color: $color4;
+  text-transform: uppercase;
+}
+
+.table td {
+  font-weight: bold;
+}
+
+.table__titulos--tickets {
+  text-align: left;
+}
+
+.table__button {
+  text-align: left;
+}
+
+.table .btn {
+  background-color: $color7;
+  color: $color5;
+  border: none;
+  height: 28px;
+  line-height: 14px;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+}
+
+.table .btn:hover {
+  background-color: $color4;
+  color: $color1;
+  transform: scale(1.1);
+}
+
+.table tr:hover {
+  color: $color4;
+}
