@@ -1,3 +1,13 @@
+@media only screen and (min-width: 1500px) {
+  .news__title {
+    font-size: 26px;
+  }
+
+  .news__text {
+    font-size: 22px;
+  }
+}
+
 @media only screen and (min-width: 1281px) {
   .carrusel {
     height: auto;
@@ -29,16 +39,12 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-  .contenedor__imagenes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-  }
-
   .carrusel {
     height: auto;
+  }
+  .contenedor__imagenes {
+    justify-content: center;
+    align-items: center;
   }
 
   .joejonas-imagen,
@@ -95,11 +101,8 @@
   }
 
   .contenedor__imagenes {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
   }
 
   .joejonas-imagen,
@@ -175,10 +178,15 @@
     display: none;
   }
 
-  .gallery__container {
+  #table {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .gallery__contenedor {
     grid-template-columns: repeat(3, 1fr);
   }
-  .gallery__container--individual:nth-child(8) {
+  .gallery__contenedor--individual:nth-child(8) {
     grid-column: span 3;
     grid-row: span 1;
   }
@@ -224,11 +232,6 @@
     width: 100%;
     margin-top: 30px;
   }
-
-  #table {
-    width: 100%;
-    font-size: 15px;
-  }
 }
 @media only screen and (min-width: 280px) and (max-width: 560px) {
   .jonas-brothers__principal {
@@ -249,15 +252,6 @@
     padding: 20px;
     width: 100%;
     height: auto;
-  }
-
-  .gallery__container {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery__container--individual:nth-child(n + 1) {
-    grid-column: span 1;
-    grid-row: span 1;
   }
 
   .news {
@@ -286,29 +280,19 @@
     display: none;
   }
 
-  .tour__dates-texto-animado--title {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
+  .tour-dates__texto-animado--title {
     align-items: center;
   }
 
   $headings: (
-    h2: 30px,
-    h3: 20px,
-    h4: 15px,
+    h2: 32px,
+    h3: 22px,
+    h4: 17px,
   );
 
   @each $h, $size in $headings {
     .btn--#{$h} {
       font-size: $size;
-      font-family: $font;
-      color: $color4;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      font-weight: bold;
-      text-align: center;
     }
   }
 
@@ -321,6 +305,15 @@
   .table .btn {
     font-weight: none;
     font-size: 10px;
+  }
+
+  .gallery__contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__contenedor--individual:nth-child(n + 1) {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   .video__individual {
