@@ -41,7 +41,8 @@ body {
 }
 
 /****************** index: BANNER *******************/
-h1, .the-brothers__title {
+h1,
+.the-brothers__title {
   color: #ffd900;
   font-family: "Signika", sans serif;
   font-weight: bold;
@@ -88,7 +89,8 @@ h1, .the-brothers__title {
   height: 100vh;
 }
 
-.jonas-brothers__principal h1, .jonas-brothers__principal .the-brothers__title {
+.jonas-brothers__principal h1,
+.jonas-brothers__principal .the-brothers__title {
   color: #ffd900;
   font-family: "Signika", sans serif;
   font-weight: bold;
@@ -475,7 +477,7 @@ h1, .the-brothers__title {
   margin-bottom: 50px;
 }
 
-.gallery__contenedor {
+.gallery__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 250px;
@@ -486,16 +488,16 @@ h1, .the-brothers__title {
   margin-bottom: 100px;
 }
 
-.gallery__contenedor :nth-child(1),
-.gallery__contenedor :nth-child(3) {
+.gallery__container :nth-child(1),
+.gallery__container :nth-child(3) {
   grid-row: span 2;
 }
 
-.gallery__contenedor :nth-child(2) {
+.gallery__container :nth-child(2) {
   grid-column: span 2;
 }
 
-.gallery__contenedor :nth-child(8) {
+.gallery__container :nth-child(8) {
   grid-column: span 2;
   grid-row: span 2;
 }
@@ -616,11 +618,15 @@ h1, .the-brothers__title {
 }
 
 /*******************  DISCOGRAPHY  *******************/
-.discography, .tour-dates, .gallery {
+.discography,
+.tour-dates,
+.gallery {
   font-family: "Signika", sans serif;
 }
 
-.discography__title, .gallery__title, .videos__title {
+.discography__title,
+.gallery__title,
+.videos__title {
   color: #ffd900;
   font-family: "Signika", sans serif;
   font-size: 40px;
@@ -762,7 +768,7 @@ h1, .the-brothers__title {
   margin-bottom: 16px;
 }
 
-.footer__newsletter input[type=text] {
+.footer__newsletter input[type="text"] {
   height: 45px;
   width: 100%;
   outline: none;
@@ -774,7 +780,7 @@ h1, .the-brothers__title {
   border: 2px solid #1d1d1d;
 }
 
-.footer__newsletter input[type=submit] {
+.footer__newsletter input[type="submit"] {
   height: 42px;
   width: 100%;
   font-size: 18px;
@@ -789,7 +795,7 @@ h1, .the-brothers__title {
   transition: all 0.3s ease-in-out;
 }
 
-.footer__newsletter input[type=submit]:hover {
+.footer__newsletter input[type="submit"]:hover {
   background: none;
   color: #ffd900;
 }
@@ -863,16 +869,16 @@ h1, .the-brothers__title {
   }
 
   .disc__contenedor,
-.disc__contenedor2 {
+  .disc__contenedor2 {
     height: auto;
   }
 
   .album__info h3,
-.album__info2 h3 {
+  .album__info2 h3 {
     font-size: 45px;
   }
   .album__info p,
-.album__info2 p {
+  .album__info2 p {
     font-size: 35px;
   }
 
@@ -881,18 +887,21 @@ h1, .the-brothers__title {
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .contenedor__imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+
   .carrusel {
     height: auto;
   }
 
-  .contenedor__imagenes {
-    justify-content: center;
-    align-items: center;
-  }
-
   .joejonas-imagen,
-.nickjonas-imagen,
-.kevinjonas-imagen {
+  .nickjonas-imagen,
+  .kevinjonas-imagen {
     height: 20% px;
     width: 28%;
     padding: 10px;
@@ -909,12 +918,12 @@ h1, .the-brothers__title {
   }
 
   .disc__contenedor,
-.disc__contenedor2 {
+  .disc__contenedor2 {
     height: auto;
   }
 
   .album__info,
-.album__info2 {
+  .album__info2 {
     padding: 0 15px;
   }
 }
@@ -944,13 +953,16 @@ h1, .the-brothers__title {
   }
 
   .contenedor__imagenes {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
   }
 
   .joejonas-imagen,
-.nickjonas-imagen,
-.kevinjonas-imagen {
+  .nickjonas-imagen,
+  .kevinjonas-imagen {
     height: 20% px;
     width: 28%;
     padding: 10px;
@@ -967,12 +979,12 @@ h1, .the-brothers__title {
   }
 
   .disc__contenedor,
-.disc__contenedor2 {
+  .disc__contenedor2 {
     height: auto;
   }
 
   .album__info,
-.album__info2 {
+  .album__info2 {
     padding: 0 15px;
   }
 }
@@ -981,7 +993,8 @@ h1, .the-brothers__title {
     height: 70vh;
   }
 
-  .jonas-brothers__principal h1, .jonas-brothers__principal .the-brothers__title {
+  .jonas-brothers__principal h1,
+  .jonas-brothers__principal .the-brothers__title {
     font-size: 30px;
     padding-top: 80px;
   }
@@ -1020,16 +1033,11 @@ h1, .the-brothers__title {
     display: none;
   }
 
-  #table {
-    width: 100%;
-    font-size: 15px;
-  }
-
-  .gallery__contenedor {
+  .gallery__container {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .gallery__contenedor--individual:nth-child(8) {
+  .gallery__container--individual:nth-child(8) {
     grid-column: span 3;
     grid-row: span 1;
   }
@@ -1049,7 +1057,7 @@ h1, .the-brothers__title {
   }
 
   .disc__contenedor,
-.disc__contenedor2 {
+  .disc__contenedor2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1057,12 +1065,12 @@ h1, .the-brothers__title {
     padding-bottom: 10px;
   }
   .disc__contenedor img,
-.disc__contenedor2 img {
+  .disc__contenedor2 img {
     width: 100%;
   }
 
   .album__info,
-.album__info2 {
+  .album__info2 {
     padding: 0 15px;
     width: 100%;
   }
@@ -1072,9 +1080,14 @@ h1, .the-brothers__title {
   }
 
   .footer__newsletter,
-.footer__redes-sociales {
+  .footer__redes-sociales {
     width: 100%;
     margin-top: 30px;
+  }
+
+  #table {
+    width: 100%;
+    font-size: 15px;
   }
 }
 @media only screen and (min-width: 280px) and (max-width: 560px) {
@@ -1082,7 +1095,8 @@ h1, .the-brothers__title {
     height: 50vh;
   }
 
-  .jonas-brothers__principal h1, .jonas-brothers__principal .the-brothers__title {
+  .jonas-brothers__principal h1,
+  .jonas-brothers__principal .the-brothers__title {
     font-size: 30px;
     padding-top: 80px;
   }
@@ -1096,6 +1110,15 @@ h1, .the-brothers__title {
     padding: 20px;
     width: 100%;
     height: auto;
+  }
+
+  .gallery__container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__container--individual:nth-child(n + 1) {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 
   .news {
@@ -1124,20 +1147,42 @@ h1, .the-brothers__title {
     display: none;
   }
 
-  .tour-dates__texto-animado--title {
+  .tour__dates-texto-animado--title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 
   .btn--h2 {
-    font-size: 32px;
+    font-size: 30px;
+    font-family: "Signika", sans serif;
+    color: #ffd900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
   }
 
   .btn--h3 {
-    font-size: 22px;
+    font-size: 20px;
+    font-family: "Signika", sans serif;
+    color: #ffd900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
   }
 
   .btn--h4 {
-    font-size: 17px;
+    font-size: 15px;
+    font-family: "Signika", sans serif;
+    color: #ffd900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
   }
 
   #table {
@@ -1149,15 +1194,6 @@ h1, .the-brothers__title {
   .table .btn {
     font-weight: none;
     font-size: 10px;
-  }
-
-  .gallery__contenedor {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery__contenedor--individual:nth-child(n+1) {
-    grid-column: span 1;
-    grid-row: span 1;
   }
 
   .video__individual {
@@ -1177,7 +1213,7 @@ h1, .the-brothers__title {
   }
 
   .disc__contenedor,
-.disc__contenedor2 {
+  .disc__contenedor2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1185,12 +1221,12 @@ h1, .the-brothers__title {
     padding-bottom: 10px;
   }
   .disc__contenedor img,
-.disc__contenedor2 img {
+  .disc__contenedor2 img {
     width: 100%;
   }
 
   .album__info,
-.album__info2 {
+  .album__info2 {
     padding: 0 15px;
     width: 100%;
   }
@@ -1200,7 +1236,7 @@ h1, .the-brothers__title {
   }
 
   .footer__newsletter,
-.footer__redes-sociales {
+  .footer__redes-sociales {
     width: 100%;
     margin-top: 30px;
   }
