@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "song": "S.O.S",
+        "duration": "2:33"
+    },
+    {
+        "id": 2,
+        "song": "Hold On",
+        "duration": "2:45"
+    },
+    {
+        "id": 3,
+        "song": "Goodnight and Goodbye",
+        "duration": "2:31"
+    },
+    {
+        "id": 4,
+        "song": "That's Just The Way We Roll",
+        "duration": "2:53"
+    },
+    {
+        "id": 5,
+        "song": "Hello Beautiful",
+        "duration": "2:29"
+    },
+    {
+        "id": 6,
+        "song": "Still In Love With You",
+        "duration": "3:10"
+    },
+    {
+        "id": 7,
+        "song": "Australia",
+        "duration": "3:33"
+    },
+    {
+        "id": 8,
+        "song": "Games",
+        "duration": "3:21"
+    },
+    {
+        "id": 9,
+        "song": "When You Look Me In The Eyes",
+        "duration": "4:09"
+    },
+    {
+        "id": 10,
+        "song": "Inseparable",
+        "duration": "2:50"
+    },
+    {
+        "id": 11,
+        "song": "Just Friends",
+        "duration": "3:07"
+    },
+    {
+        "id": 12,
+        "song": "Hollywood",
+        "duration": "2:49"
+    },
+    {
+        "id": 13,
+        "song": "Year 3000",
+        "duration": "3:22"
+    },
+    {
+        "id": 14,
+        "song": "Kids Of The Future",
+        "duration": "3:20"
+    },
+    {
+        "id": 15,
+        "song": "Take A Breath",
+        "duration": "3:18"
+    },
+    {
+        "id": 16,
+        "song": "We Got The Party",
+        "duration": "3:36"
+    }
+]

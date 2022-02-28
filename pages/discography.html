@@ -85,13 +85,10 @@
                         <a class="nav-link" href="tourdates.html">Tour Dates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="discography.html">Discography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">Store</a>
                     </li>
                 </ul>
 
@@ -122,6 +119,16 @@
                     <a href="https://youtube.com/playlist?list=PLC011275615588A27" target="_blank"><i
                             class="fab fa-youtube"></i></a>
                 </div>
+                <div class="btn__tracklist1" id="btn__tracklist1">
+                    Click here to see TrackList
+                </div>
+                <div class="table__tracklist--container">
+                    <table class="table table-sm" id="table__tracklist1">
+                        <tbody id="table__tbody1">
+                            <!-- acá se agrega la lista de canciones -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -144,6 +151,16 @@
                     <a href="https://youtube.com/playlist?list=OLAK5uy_kk29u-fkIacqt91lKsePhiCz1rAokVBSA"
                         target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
+                <div class="btn__tracklist2" id="btn__tracklist2">
+                    Click here to see TrackList
+                </div>
+                <div class="table__tracklist--container">
+                    <table class="table table-sm" id="table__tracklist2">
+                        <tbody id="table__tbody2">
+                             <!-- acá se agrega la lista de canciones -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -163,6 +180,16 @@
                     <a href="https://youtube.com/playlist?list=OLAK5uy_nz44Mmw0bPu0k-WPHdc_6qaVkMC8hlXD0"
                         target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
+                <div class="btn__tracklist3" id="btn__tracklist3">
+                    Click here to see TrackList
+                </div>
+                <div class="table__tracklist--container">
+                    <table class="table table-sm" id="table__tracklist3">
+                        <tbody id="table__tbody3">
+                             <!-- acá se agrega la lista de canciones -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -181,6 +208,16 @@
                             class="fab fa-spotify"></i></a>
                     <a href="https://youtube.com/playlist?list=OLAK5uy_kdhFpZZN02NDx98SGbdBEtxNnbhm0ypVU"
                         target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="btn__tracklist4" id="btn__tracklist4">
+                    Click here to see TrackList
+                </div>
+                <div class="table__tracklist--container">
+                    <table class="table table-sm" id="table__tracklist4">
+                        <tbody id="table__tbody4">
+                             <!-- acá se agrega la lista de canciones -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -202,6 +239,16 @@
                     <a href="https://youtube.com/playlist?list=OLAK5uy_nahKzu4c2BcpdEVFTS41D0QWsG5Z8anpk"
                         target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
+                <div class="btn__tracklist5" id="btn__tracklist5">
+                    Click here to see TrackList
+                </div>
+                <div class="table__tracklist--container">
+                    <table class="table table-sm" id="table__tracklist5">
+                        <tbody id="table__tbody5">
+                             <!-- acá se agrega la lista de canciones -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -214,10 +261,14 @@
         <div class="footer__contenedor">
             <div class="footer__newsletter">
                 <div class="footer__newsletter--title">Sign up to our newsletter</div>
-                <form action="#">
-                    <input type="text" placeholder="Enter email address">
+                <form id="formulario">
+                    <input id="name" type="text" placeholder="Enter your name">
+                    <input id="email" type="text" placeholder="Enter your email address">
                     <input type="submit" name="" value="Sign Up">
                 </form>
+                <p id="completar" class="show">*Please complete all the fields!</p>
+                <div id="result">
+                </div>
             </div>
 
             <div class="footer__redes-sociales">
@@ -233,13 +284,12 @@
                     <a href="https://jonasbrothers.tumblr.com" target="_blank"><i class="fab fa-tumblr"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="footer__copyright">
-            <p>Copyright © 2021 <a href="#">Jonas Brothers</a> All rights reserved</p>
-        </div>
-        <div class="footer__author">
-            <p>Website designed and developed by <a href="https://github.com/oopsnadia" target="_blank">Nadia Mansilla</a></p>
-        </div>
+            <div class="footer__copyright">
+                <p>Copyright © 2021 <a href="#">Jonas Brothers</a> All rights reserved</p>
+            </div>
+            <div class="footer__author">
+                <p>Website designed and developed by <a href="https://github.com/oopsnadia" target="_blank">Nadia Mansilla</a></p>
+            </div>
     </footer>
     <!--  FIN DE SECCION DE FOOTER  -->
 
@@ -257,6 +307,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
+        <script src="../js/tracklist.js"></script>
+        <script src="../formulario.js"></script>
 </body>
 
 </html>

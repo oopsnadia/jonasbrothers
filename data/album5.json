@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "song": "Sucker",
+        "duration": "3:01"
+    },
+    {
+        "id": 2,
+        "song": "Cool",
+        "duration": "2:47"
+    },
+    {
+        "id": 3,
+        "song": "Only Human",
+        "duration": "3:03"
+    },
+    {
+        "id": 4,
+        "song": "I Believe",
+        "duration": "3:37"
+    },
+    {
+        "id": 5,
+        "song": "Used To Be",
+        "duration": "3:04"
+    },
+    {
+        "id": 6,
+        "song": "Every Single Time",
+        "duration": "3:32"
+    },
+    {
+        "id": 7,
+        "song": "Don't Throw It Away",
+        "duration": "2:52"
+    },
+    {
+        "id": 8,
+        "song": "Love Her",
+        "duration": "3:13"
+    },
+    {
+        "id": 9,
+        "song": "Happy When I'm Sad",
+        "duration": "2:38"
+    },
+    {
+        "id": 10,
+        "song": "Trust",
+        "duration": "3:00"
+    },
+    {
+        "id": 11,
+        "song": "Strangers",
+        "duration": "3:53"
+    },
+    {
+        "id": 12,
+        "song": "Hesitate",
+        "duration": "3:28"
+    },
+    {
+        "id": 13,
+        "song": "Rollercoaster",
+        "duration": "3:01"
+    },
+    {
+        "id": 14,
+        "song": "Comeback",
+        "duration": "2:35"
+    }
+]
+

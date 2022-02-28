@@ -65,6 +65,20 @@
   color: $color4;
 }
 
+.sent {
+  font-size: 15px;
+  color: $color4;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.show {
+  color: $color4;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 .footer__redes-sociales {
   width: 35%;
   transition: all 0.4s ease;

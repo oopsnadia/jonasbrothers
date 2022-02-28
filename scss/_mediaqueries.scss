@@ -42,6 +42,7 @@
   .carrusel {
     height: auto;
   }
+
   .contenedor__imagenes {
     justify-content: center;
     align-items: center;
@@ -81,6 +82,7 @@
     width: 100%;
     height: auto;
   }
+
   .news {
     padding: 2rem;
     flex-direction: column;
@@ -186,6 +188,7 @@
   .gallery__contenedor {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .gallery__contenedor--individual:nth-child(8) {
     grid-column: span 3;
     grid-row: span 1;
@@ -227,12 +230,44 @@
   .footer {
     position: relative;
   }
+
   .footer__newsletter,
   .footer__redes-sociales {
     width: 100%;
     margin-top: 30px;
   }
+
+  .paymentContenedor {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0px;
+  }
+
+  .order-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .credit-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .credit-info .owner,
+        .credit-info .CVV,
+        .credit-info #expiration-date,
+        .credit-info #credit_cards {
+            width: 100%;
+        }
+        .credit-info #credit_cards {
+            text-align: left;
+        }
+        
 }
+
 @media only screen and (min-width: 280px) and (max-width: 560px) {
   .jonas-brothers__principal {
     height: 50vh;
@@ -284,13 +319,13 @@
     align-items: center;
   }
 
-  $headings: (
-    h2: 32px,
+  $headings: (h2: 32px,
     h3: 22px,
     h4: 17px,
   );
 
-  @each $h, $size in $headings {
+  @each $h,
+  $size in $headings {
     .btn--#{$h} {
       font-size: $size;
     }
@@ -321,6 +356,7 @@
     height: auto;
     margin: 10px;
   }
+
   .video__individual2 {
     width: 100%;
     height: auto;
@@ -353,9 +389,31 @@
   .footer {
     position: relative;
   }
+
   .footer__newsletter,
   .footer__redes-sociales {
     width: 100%;
     margin-top: 30px;
   }
+
+
+  .paymentContenedor {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0px;
+  }
+
+  .order-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .credit-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
 }

@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "song": "What I Go To School For",
+        "duration": "3:33"
+    },
+    {
+        "id": 2,
+        "song": "Time For Me To Fly",
+        "duration": "3:05"
+    },
+    {
+        "id": 3,
+        "song": "Year 3000",
+        "duration": "3:21"
+    },
+    {
+        "id": 4,
+        "song": "One Day At A Time",
+        "duration": "3:54"
+    },
+    {
+        "id": 5,
+        "song": "6 Minutes",
+        "duration": "3:06"
+    },
+    {
+        "id": 6,
+        "song": "Mandy",
+        "duration": "2:48"
+    },
+    {
+        "id": 7,
+        "song": "You Just Don't Know It",
+        "duration": "3:37"
+    },
+    {
+        "id": 8,
+        "song": "I Am What I Am",
+        "duration": "2:10"
+    },
+    {
+        "id": 9,
+        "song": "Underdog",
+        "duration": "2:15"
+    },
+    {
+        "id": 10,
+        "song": "7:05",
+        "duration": "3:47"
+    },
+    {
+        "id": 11,
+        "song": "Please Be Mine",
+        "duration": "3:13"
+    }
+]
+

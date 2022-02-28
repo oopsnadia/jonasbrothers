@@ -16,6 +16,11 @@
 
     <!-- enlaces a los archivos en internet CDN - fin -->
 
+    <!--ENLACES PARA ANIMACIONES-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--FIN DE ENLACES PARA ANIMACIONES-->
+
     <!--FUENTES-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,14 +49,14 @@
     <link rel="icon" href="../img/jblogo.png" type="image/png" sizes="32x32">
 
     <!-- SEO -->
-    <title>Galería de Fotos - Jonas Brothers</title>
-    <meta name="description" content="Photo gallery of the Jonas Brothers in concert">
-    <meta name="keywords" content="jonas brothers, jonas, music, pop rock music, concert">
+    <title>Store - Jonas Brothers</title>
+    <meta name="description" content="Get the ultimate Jonas Brothers merch!">
+    <meta name="keywords" content="jonas brothers, jonas, music, merchandising, store, clothes, accesories">
     <!--FIN DE SEO -->
-
 </head>
 
 <body>
+
     <header class="header">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="nav1">
             <!-- Brand -->
@@ -79,13 +84,10 @@
                         <a class="nav-link" href="tourdates.html">Tour Dates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videos.html">Videos</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="discography.html">Discography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">Store</a>
                     </li>
                 </ul>
 
@@ -94,83 +96,50 @@
     </header>
 
 
-    <div class="gallery">
-        <h1 class="gallery__title">"Remember This" Tour</h1>
+    <section class="store">
+        <h1 class="store__title">Store</h1>
 
-        <section class="gallery__contenedor">
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb11.jpg" alt="Joe Jonas in concert">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb9.jpg" alt="Jonas Brothers in concert">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb7.jpg" alt="Joe Jonas in concert">
-                    </div>
-                </div>
+
+        <div class="store__contenedor">
+
+            <div class="products">
+                <!-- acá van los productos -->
             </div>
 
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb4.jpg" alt="Nick Jonas in concert">
+
+            <div class="cart">
+                <div class="shopping-bag">
+                    <a href="#">
+                        <img src="../img/cart.png" alt="cart">
+                        <p class="textoCart"> Cart </p>
+
+                        <div class="total-items-in-cart">
+                            0
+                        </div>
+                    </a>
+                </div>
+                <div class="cart-header">
+                    <div class="column1">Item</div>
+                    <div class="column2">Unit price</div>
+                    <div class="column3">Units</div>
+                </div>
+                <div class="cart-items">
+                    <!-- acá van los productos seleccionados por el comprador -->
+                </div>
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        Subtotal (0 items): $0
+                    </div>
+                    <div class="checkout">
+                        <a id="procesarCompra">Proceed to checkout</a>
                     </div>
                 </div>
             </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb5.jpg" alt="Kevin Jonas in concert">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb8.jpg" alt="Jonas Brothers in concert">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb1.jpg" alt="Jonas Brothers hugging backstage">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb6.jpg" alt="Jonas Brothers in concert">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb3.jpg" alt="Kevin Jonas playing the guitar live in concert">
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__contenedor--individual">
-                <div class="gallery__item">
-                    <div class="gallery__item--image">
-                        <img src="../img/jb10.jpg" alt="Nick Jonas playing the guitar live in concert">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+
+        </div>
+        </div>
+    </section>
+
 
 
     <!--  SECCION DE FOOTER  -->
@@ -178,10 +147,14 @@
         <div class="footer__contenedor">
             <div class="footer__newsletter">
                 <div class="footer__newsletter--title">Sign up to our newsletter</div>
-                <form action="#">
-                    <input type="text" placeholder="Enter email address">
+                <form id="formulario">
+                    <input id="name" type="text" placeholder="Enter your name">
+                    <input id="email" type="text" placeholder="Enter your email address">
                     <input type="submit" name="" value="Sign Up">
                 </form>
+                <p id="completar" class="show">*Please complete all the fields!</p>
+                <div id="result">
+                </div>
             </div>
 
             <div class="footer__redes-sociales">
@@ -197,24 +170,23 @@
                     <a href="https://jonasbrothers.tumblr.com" target="_blank"><i class="fab fa-tumblr"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="footer__copyright">
-            <p>Copyright © 2021 <a href="#">Jonas Brothers</a> All rights reserved</p>
-        </div>
-        <div class="footer__author">
-            <p>Website designed and developed by <a href="https://github.com/oopsnadia" target="_blank">Nadia Mansilla</a></p>
-        </div>
+            <div class="footer__copyright">
+                <p>Copyright © 2021 <a href="#">Jonas Brothers</a> All rights reserved</p>
+            </div>
+            <div class="footer__author">
+                <p>Website designed and developed by <a href="https://github.com/oopsnadia" target="_blank">Nadia Mansilla</a></p>
+            </div>
     </footer>
     <!--  FIN DE SECCION DE FOOTER  -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/formulario.js"></script>
+
 </body>
 
 </html>

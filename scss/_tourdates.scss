@@ -106,14 +106,24 @@ $headings: (
   line-height: 14px;
   font-weight: bold;
   transition: transform 0.5s ease;
+
+  a {
+    text-decoration: none;
+    color: $color5;
+  }
 }
 
 .table .btn:hover {
   background-color: $color4;
-  color: $color1;
   transform: scale(1.1);
+}
+
+.table .btn a:hover {
+  color: $color1;
 }
 
 .table tr:hover {
   color: $color4;
 }
+
+

@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*******  PALETA PRINCIPAL DE COLORES *******/
+/******* COLORES AUXILIARES PARA ALGUNOS DETALLES  *******/
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +18,7 @@ body {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
 }
 
@@ -100,20 +103,6 @@ h1, .the-brothers__title {
   padding-top: 100px;
 }
 
-/*******************  index: CARRUSEL  *******************/
-.carrusel {
-  padding: 50px;
-  background-color: #ffd900;
-  width: 100%;
-  height: 100vh;
-}
-
-.carousel img {
-  object-fit: cover;
-  object-position: center;
-  height: auto;
-}
-
 /*******************  index: SECCION THE-BROTHERS  *******************/
 .the-brothers {
   padding: 50px 25px;
@@ -136,95 +125,6 @@ h1, .the-brothers__title {
 
 .the-brothers__foto:hover {
   transform: scale(1.2);
-}
-
-/*******************  index: SECCION LATEST NEWS  *******************/
-.latest-news {
-  background-color: #ffd900;
-  width: 100%;
-  padding: 0 50px 25px 50px;
-}
-
-.latest-news__title {
-  color: black;
-  font-family: "Signika", sans serif;
-  font-weight: bold;
-  font-size: 35px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding-top: 50px;
-  margin-bottom: 50px;
-}
-
-.news {
-  width: 100%;
-  max-width: 98rem;
-  display: flex;
-  border-radius: 16px;
-  background-color: black;
-  margin-bottom: 50px;
-}
-
-.news__img {
-  min-width: 35rem;
-  max-width: 35rem;
-  height: 30rem;
-  padding: 50px;
-  position: relative;
-}
-
-.news__img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-  display: block;
-}
-
-.news__title {
-  font-size: 22px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffd900;
-}
-
-.news__info {
-  padding-right: 35px;
-}
-
-.news__text {
-  font-size: 18px;
-  color: white;
-  text-align: justify;
-}
-
-.news__cta {
-  display: inline-block;
-  padding: 8px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: white;
-  background-color: #ff20a8;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: transform 0.5s ease;
-}
-
-.news__cta a {
-  text-decoration: none;
-  color: white;
-}
-
-.news__cta a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.news__cta:hover {
-  transform: scale(1.1);
 }
 
 /*******************  index: PROPAGANDA DEL TOUR  *******************/
@@ -460,168 +360,30 @@ h1, .the-brothers__title {
   font-weight: bold;
   transition: transform 0.5s ease;
 }
+.table .btn a {
+  text-decoration: none;
+  color: white;
+}
 
 .table .btn:hover {
   background-color: #ffd900;
-  color: black;
   transform: scale(1.1);
+}
+
+.table .btn a:hover {
+  color: black;
 }
 
 .table tr:hover {
   color: #ffd900;
 }
 
-/*******************  GALLERY  *******************/
-.gallery__title {
-  margin-bottom: 50px;
-}
-
-.gallery__contenedor {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 250px;
-  grid-gap: 8px;
-  grid-auto-flow: dense;
-  min-height: 100vh;
-  margin: 20px;
-  margin-bottom: 100px;
-}
-
-.gallery__contenedor :nth-child(1),
-.gallery__contenedor :nth-child(3) {
-  grid-row: span 2;
-}
-
-.gallery__contenedor :nth-child(2) {
-  grid-column: span 2;
-}
-
-.gallery__contenedor :nth-child(8) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.gallery__item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-color: #ffd900;
-}
-
-.gallery__item--image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.gallery__item--image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
-.gallery__item--image:hover img {
-  transition: 0.4s ease-in-out;
-  transform: scale(1.2);
-}
-
-/*******************  VIDEOS *******************/
-#videos {
-  font-family: "Signika", sans serif;
-}
-
-.videos__title {
-  background-color: black;
-}
-
-.videos__contenedor {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 100px;
-}
-
-.videos__contenedor2 {
-  background-color: #ff20a8;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.video__contenedor--caja {
-  background-color: #ffd900;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.video__contenedor--caja2 {
-  background-color: #ff20a8;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.video__individual {
-  width: 45%;
-  height: auto;
-  margin: 30px;
-}
-
-.video__individual2 {
-  width: 29%;
-  height: auto;
-  margin: 10px;
-}
-
-.video__individual--title {
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  padding: 20px;
-}
-
-.video__individual--title2 {
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  padding: 20px;
-}
-
-.video__individual--title3 {
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 20px;
-}
-
-.videos__contenedor iframe {
-  width: 100%;
-  height: 350px;
-  justify-content: center;
-}
-
-.videos__contenedor2 iframe {
-  width: 100%;
-  height: 250px;
-  justify-content: center;
-}
-
 /*******************  DISCOGRAPHY  *******************/
-.discography, .tour-dates, .gallery {
+.discography, .compraDeTickets__title, .tour-dates {
   font-family: "Signika", sans serif;
 }
 
-.discography__title, .gallery__title, .videos__title {
+.discography__title, .payment__title, .store__title {
   color: #ffd900;
   font-family: "Signika", sans serif;
   font-size: 40px;
@@ -652,7 +414,7 @@ h1, .the-brothers__title {
 .disc__contenedor img {
   border-radius: 15%;
   width: 40%;
-  height: auto;
+  height: 40%;
   padding: 50px;
   transition: transform 0.6s ease;
 }
@@ -705,7 +467,7 @@ h1, .the-brothers__title {
 .disc__contenedor2 img {
   border-radius: 15%;
   width: 40%;
-  height: auto;
+  height: 40%;
   padding: 50px;
   transition: transform 0.6s ease;
 }
@@ -725,6 +487,410 @@ h1, .the-brothers__title {
   font-size: 20px;
   color: #ffd900;
   text-align: justify;
+}
+
+.btn__tracklist1, .btn__tracklist2, .btn__tracklist3, .btn__tracklist4, .btn__tracklist5 {
+  display: inline-block;
+  padding: 6px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  background-color: #ff20a8;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+#table__tracklist {
+  cursor: pointer;
+}
+
+.table__tracklist--container {
+  margin-top: 10px;
+  color: white;
+  background-color: #ff20a8;
+}
+
+.table__tracklist--duration, .duration {
+  text-align: right;
+}
+
+.table__tracklist--song, .song {
+  text-align: center;
+}
+
+.store {
+  font-family: "Signika", sans serif;
+}
+
+.store__contenedor {
+  max-width: 1350px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-list {
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products {
+  width: 70%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card-img-top {
+  background-color: #fffddd;
+}
+
+.card-body {
+  background-color: #ffd900;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 24px;
+}
+
+.card .btn-primary {
+  background-color: #ff20a8;
+  border: none;
+  width: 70%;
+  text-transform: uppercase;
+}
+
+.card .btn-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+.cart {
+  height: 100%;
+  width: 30%;
+  position: relative;
+  background-color: #ff20a8;
+}
+
+.shopping-bag {
+  padding: 2px 2px;
+}
+
+.shopping-bag a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.shopping-bag a img {
+  width: 32px;
+  height: 32px;
+}
+
+.shopping-bag .total-items-in-cart {
+  margin-left: 10px;
+  padding: 5px;
+  background-color: #f2ff3a;
+  border-radius: 5px;
+  color: black;
+}
+
+.textoCart {
+  padding: 0 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.products img {
+  width: 250px;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* cart items */
+.cart-items {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* cart item */
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.cart-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* item info */
+.cart-item .item-info {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+}
+
+.cart-item .item-info:hover {
+  background-color: #a00000;
+  cursor: pointer;
+}
+
+.cart-item .item-info img {
+  width: 80px;
+  filter: drop-shadow(2px 2px 2px #575757);
+}
+
+/* unit price */
+.cart-item .unit-price {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+/* units */
+.cart-item .units {
+  flex: 1;
+}
+
+.cart-item .units .number {
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.cart-item .units .btn {
+  width: 20px;
+  height: 20px;
+  background-color: #f2ff3a;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* cart footer */
+.cart-footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.cart-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 1.3rem;
+}
+
+.cart-footer .subtotal {
+  background-color: white;
+}
+
+.cart-footer .checkout {
+  background-color: #f2ff3a;
+  cursor: pointer;
+}
+
+.cart-footer .checkout a {
+  text-decoration: none;
+  color: black;
+}
+
+.cart-footer .checkout a:hover {
+  text-decoration: none;
+  color: #ff20a8;
+}
+
+/* compra html */
+/* FINALIZAR COMPRA */
+.payment {
+  height: auto;
+  font-family: "Signika", sans serif;
+  background-image: url(img/confetti1.svg);
+}
+
+.window {
+  max-width: 1350px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.h2card {
+  padding: 0.5em;
+  text-align: center;
+  font-size: 25px !important;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+}
+
+.order-info {
+  width: 30%;
+  background-color: #ffd900;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.order-info-content {
+  table-layout: fixed;
+  border: 3px solid white;
+  width: 100%;
+  padding: 10px;
+}
+
+.productosFinal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.productosFinal-desc2 {
+  text-align: end;
+}
+
+.item-price {
+  text-align: end;
+}
+
+.total {
+  text-align: right;
+  border-top: 1px solid black;
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: end;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.total p {
+  font-size: 20px !important;
+}
+
+.credit-info {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+/* credit card form */
+.credit-info label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.credit-info {
+  float: left;
+  font-size: 18px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.credit-info .form-group {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.credit-info .form-control {
+  line-height: 40px;
+  height: auto;
+  padding: 0 16px;
+}
+
+.credit-info .owner {
+  width: 63%;
+  margin-right: 10px;
+}
+
+.credit-info .CVV {
+  width: 35%;
+}
+
+.credit-info #card-number-field {
+  width: 100%;
+}
+
+.credit-info #expiration-date {
+  width: 49%;
+}
+
+.credit-info #credit_cards {
+  width: 50%;
+  margin-top: 25px;
+  text-align: right;
+}
+
+.credit-info #pay-now {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.credit-info .btn {
+  width: 100%;
+  margin-top: 3px;
+  font-size: 24px;
+  border: none;
+  background-color: #ff20a8;
+  color: white;
+}
+
+#btn__credit-card {
+  width: 100%;
+  margin-top: 3px;
+  font-size: 15px;
+  color: white;
+  background-color: red;
+  border: none;
+}
+
+.credit-info select {
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.transparent {
+  opacity: 0.2;
 }
 
 /*******************  FOOTER  *******************/
@@ -795,6 +961,20 @@ h1, .the-brothers__title {
   color: #ffd900;
 }
 
+.sent {
+  font-size: 15px;
+  color: #ffd900;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.show {
+  color: #ffd900;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
 .footer__redes-sociales {
   width: 35%;
   transition: all 0.4s ease;
@@ -857,6 +1037,268 @@ h1, .the-brothers__title {
 .footer__author a {
   color: white;
   font-size: 10px;
+}
+
+/* body {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  } */
+/*******************  TICKETS *******************/
+.tickets {
+  background-image: url(img/confetti1.svg);
+  background-repeat: repeat;
+  font-family: "Signika", sans serif;
+}
+
+.compraDeTickets__title {
+  color: #ffd900;
+  font-family: "Signika", sans serif;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  padding-top: 30px;
+  background-color: black;
+}
+
+.compraDeTickets__subtitle {
+  color: #ff20a8;
+  font-family: "Signika", sans serif;
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  background-color: black;
+}
+
+.compraDeTickets__contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.estadio__contenedor {
+  width: 35%;
+  height: 70%;
+  background-color: #507964;
+  border: 4px solid white;
+  border-radius: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  font-family: "Signika", sans serif;
+}
+
+.stage {
+  width: 50%;
+  height: 10%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.seccion1 {
+  width: 80%;
+  height: 30%;
+  border: 3px solid white;
+  background-color: #ffd900;
+  color: black;
+  border-radius: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.seccion1:hover {
+  background-color: #fff9d4;
+  border: 3px solid #ffd900;
+  color: black;
+  cursor: pointer;
+}
+
+.seccion2 {
+  width: 90%;
+  height: 40%;
+  border: 3px solid white;
+  background-color: #ff20a8;
+  color: black;
+  border-radius: 20%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.seccion2:hover {
+  background-color: #ffcfec;
+  border: 3px solid #ff20a8;
+  color: black;
+  cursor: pointer;
+}
+
+.infoTickets {
+  width: 35%;
+  height: 50%;
+}
+
+.infoTickets__subtitle {
+  background-color: black;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.clickHereToContinue {
+  width: 100%;
+  height: 50px;
+  background-color: #ffd900;
+  align-items: center;
+}
+
+.clickHereToContinue p {
+  font-family: "Signika", sans serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.clickHereToContinue a {
+  text-decoration: none;
+  color: black;
+}
+
+.clickHereToContinue a:hover {
+  text-decoration: none;
+  color: #a00000;
+}
+
+.goBack {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: #ff20a8;
+  align-items: center;
+}
+
+.goBack p {
+  font-family: "Signika", sans serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.goBack a {
+  text-decoration: none;
+  color: white;
+}
+
+.goBack a:hover {
+  text-decoration: none;
+  color: #a00000;
+}
+
+/*****************  DISEÑO DEL TICKET  *******************/
+.box {
+  margin: 0px auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  background: #fffddd url(https://subtlepatterns.com/patterns/lightpaperfibers.png);
+  color: #333;
+  text-transform: uppercase;
+  padding: 8px;
+  width: 100%;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px white;
+  font-family: "arvo";
+  font-size: 11px;
+  border-left: 1px dashed rgba(51, 51, 51, 0.5);
+}
+
+.inner {
+  border: 2px dashed rgba(51, 51, 51, 0.5);
+  min-height: 100px;
+  padding: 8px;
+}
+
+.inner h1, .inner .the-brothers__title {
+  color: black;
+  padding: 5px 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-family: "arvo";
+  border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+  text-align: center;
+}
+
+.info {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.info .wp {
+  float: left;
+  padding: 5px;
+  width: 83px;
+  text-align: center;
+}
+
+.info .wp h2 {
+  margin: 8px;
+  font-size: 14px;
+}
+
+.totalTicket {
+  border-top: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.totalTicket h2 {
+  padding-left: 115px;
+  margin: 10px 0px;
+  font-size: 15px;
+  float: right;
+}
+
+.totalTicket p {
+  float: right;
+  margin: 0px;
+  margin-right: 15px;
 }
 
 @media only screen and (min-width: 1500px) {
@@ -1091,6 +1533,36 @@ h1, .the-brothers__title {
     width: 100%;
     margin-top: 30px;
   }
+
+  .paymentContenedor {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0px;
+  }
+
+  .order-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .credit-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .credit-info .owner,
+.credit-info .CVV,
+.credit-info #expiration-date,
+.credit-info #credit_cards {
+    width: 100%;
+  }
+
+  .credit-info #credit_cards {
+    text-align: left;
+  }
 }
 @media only screen and (min-width: 280px) and (max-width: 560px) {
   .jonas-brothers__principal {
@@ -1218,6 +1690,25 @@ h1, .the-brothers__title {
 .footer__redes-sociales {
     width: 100%;
     margin-top: 30px;
+  }
+
+  .paymentContenedor {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0px;
+  }
+
+  .order-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+
+  .credit-info {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
   }
 }
 

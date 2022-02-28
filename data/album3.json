@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "song": "BB Good",
+        "duration": "2:56"
+    },
+    {
+        "id": 2,
+        "song": "Burnin' Up",
+        "duration": "2:54"
+    },
+    {
+        "id": 3,
+        "song": "Shelf",
+        "duration": "3:48"
+    },
+    {
+        "id": 4,
+        "song": "One Man Show",
+        "duration": "3:08"
+    },
+    {
+        "id": 5,
+        "song": "Lovebug",
+        "duration": "3:40"
+    },
+    {
+        "id": 6,
+        "song": "Tonight",
+        "duration": "3:29"
+    },
+    {
+        "id": 7,
+        "song": "Can't Have You",
+        "duration": "4:28"
+    },
+    {
+        "id": 8,
+        "song": "Video Girl",
+        "duration": "2:53"
+    },
+    {
+        "id": 9,
+        "song": "Pushin' Me Away",
+        "duration": "3:03"
+    },
+    {
+        "id": 10,
+        "song": "Sorry",
+        "duration": "3:12"
+    },
+    {
+        "id": 11,
+        "song": "Got Me Going Crazy",
+        "duration": "2:35"
+    },
+    {
+        "id": 12,
+        "song": "A Little Bit Longer",
+        "duration": "3:25"
+    }
+]
